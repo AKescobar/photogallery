@@ -57,11 +57,114 @@ table {
 }
 
 /*--------------------Whole Document--------------------*/
+html{
+    background-color: var(--blk);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0 auto;
+    align-content: center;
+    width: 485px;
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a{
+    font-size: 1.25em;
+}
+
+p{
+    font-size: 1.25em;
+    padding: 12px 10px;
+}
+
+figcaption, label, input, small{
+    font-size: 1em;
+}
 
 /*--------------------Header--------------------*/
+h1{
+    font-size: 3em;   
+    color: var(--grn);
+    background-color: var(--wht);
+   }
+
+nav ul{
+    color: var(--wht);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 25px 50px;
+}
+
+nav li{
+    display: block;
+}
 
 /*--------------------Main--------------------*/
+main{
+    background-color: var(--wht);
+}
 
+img{
+    display: block;
+    margin: 15px auto;
+}
+
+figcaption{
+    text-align: center;
+}
+
+figcaption[title="btm-blk"]{
+    color: var(--blk);
+    position: relative;
+    top: -43px;
+    text-transform: uppercase;
+}
+
+figcaption[title="btm-wht"]{
+    color: var(--wht);
+    position: relative;
+    top: -43px;
+    text-transform: uppercase;
+}
+
+figcaption[title="top-wht"]{
+    color: var(--wht);
+    position: relative;
+    top: -279px;
+    text-transform: uppercase;
+}
+figcaption[title="top-blk"]{
+    color: var(--blk);
+    position: relative;
+    top: -277px;
+    text-transform: uppercase;
+}
+
+figcaption[title="long-pic"]{
+    color: var(--blk);
+    position: relative;
+    top: -625px;
+    text-transform: uppercase;
+}
+
+.contact{
+    background-color: var(--blk);
+}
+
+.contact h2, .contact p, .contact label{
+    color: var(--wht);
+}
+
+.contact p{
+    text-align: center;
+}
 /*--------------------Form--------------------*/
 
 /*--------------------Footer--------------------*/
