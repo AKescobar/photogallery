@@ -88,22 +88,35 @@ figcaption, label, input, small{
 }
 
 /*--------------------Header--------------------*/
-h1{
-    font-size: 3em;   
+h1{  
     color: var(--grn);
     background-color: var(--wht);
+    font-size: 3em; 
    }
 
 nav ul{
     color: var(--wht);
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     padding: 25px 50px;
 }
 
 nav li{
     display: block;
+}
+
+nav a{
+    color: var(--wht);
+    display: block;
+    text-decoration: none;
+    padding: 5px;
+}
+
+[href="#top"]{
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
 }
 
 /*--------------------Main--------------------*/
@@ -154,19 +167,52 @@ figcaption[title="long-pic"]{
     text-transform: uppercase;
 }
 
-.contact{
+#contact{
     background-color: var(--blk);
 }
 
-.contact h2, .contact p, .contact label{
+#contact h2, #contact p, #contact label{
     color: var(--wht);
 }
 
-.contact p{
+#contact p{
     text-align: center;
 }
 /*--------------------Form--------------------*/
+form{
+    display: flex;
+    flex-direction: column;
+}
 
+label{
+    color: var(--wht);
+    margin-top: 10px;
+
+}
+
+input{
+    margin-bottom: 10px
+}
+
+::placeholder{
+    color: var(--grn);
+}
+
+input[type="submit"]{
+    border-radius: 18px;
+    width: 263px;
+    justify-items: center;
+    height: 40px;
+    margin: 15px auto;
+}
 /*--------------------Footer--------------------*/
+footer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+small{
+    color: var(--wht);
+}
 
 /*--------------------Media Queries--------------------*/
