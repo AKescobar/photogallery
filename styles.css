@@ -98,12 +98,14 @@ nav ul{
     color: var(--wht);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    padding: 25px 50px;
+    padding: 25px 121px;
+    width: 50%;
+    text-align: center;
 }
 
 nav li{
     display: block;
+    align-items: center;
 }
 
 nav a{
@@ -126,7 +128,7 @@ main{
 
 img{
     display: block;
-    margin: 15px auto;
+    margin: 4px auto;
 }
 
 figcaption{
@@ -200,7 +202,7 @@ input{
 
 input[type="submit"]{
     border-radius: 18px;
-    width: 263px;
+    width: 50%;
     justify-items: center;
     height: 40px;
     margin: 15px auto;
@@ -216,3 +218,37 @@ small{
 }
 
 /*--------------------Media Queries--------------------*/
+@media screen and (min-width:880px){
+    body{
+        width: 880px;
+    }
+
+    nav ul{
+        padding: 25px 308px;
+        width: 30%;
+        text-align: center;
+    }
+
+    #pic-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body{
+        width: 1300px;
+    }
+
+    nav ul{
+        padding: 25px 0 25px 910px;
+        width: 30%;
+        text-align: right;
+    }
+
+    #pic-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+}
