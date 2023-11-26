@@ -129,6 +129,10 @@ nav a{
     right: 20px;
 }
 
+nav a:hover{
+    color: var(--grn);
+}
+
 /*--------------------Main--------------------*/
 main{
     background-color: var(--wht);
@@ -198,7 +202,6 @@ form{
 
 label{
     color: var(--wht);
-    font-weight: bold;
     margin-top: 10px;
 
 }
@@ -221,6 +224,11 @@ input[type="submit"]{
     background-color: var(--grn);
     color: var(--wht);
     font-weight: bold;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--wht);
+    color: var(--grn);
 }
 
 #hide{
