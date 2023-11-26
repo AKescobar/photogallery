@@ -107,8 +107,8 @@ nav ul{
     color: var(--wht);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 25px 121px;
-    width: 50%;
+    margin: 25px auto;
+    width: 61%;
     text-align: center;
 }
 
@@ -204,16 +204,18 @@ form{
 label{
     color: var(--wht);
     margin-top: 10px;
-
+    padding-left: 10px;
 }
 
 input{
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    height: 1.85em;
 }
 
 ::placeholder{
     color: var(--grn);
     font-weight: bold;
+    padding-left: 10px;
 }
 
 input[type="submit"]{
@@ -253,8 +255,8 @@ small{
     }
 
     nav ul{
-        padding: 25px 308px;
-        width: 33%;
+        margin: 25px auto;
+        width: 35%;
         text-align: center;
     }
 
@@ -270,7 +272,7 @@ small{
     }
 
     nav ul{
-        padding: 25px 0 25px 910px;
+        padding-left: 910px;
         width: 30%;
         text-align: right;
     }
