@@ -69,21 +69,27 @@ body{
 }
 
 h2{
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 2em;
     text-align: center;
     padding: 10px;
 }
 
 nav a{
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 1.25em;
 }
 
 p{
+    font-weight: 100;
     font-size: 1.25em;
     padding: 12px 10px;
 }
 
 figcaption, label, input, small{
+    text-transform: uppercase;
     font-size: 1em;
 }
 
@@ -91,6 +97,8 @@ figcaption, label, input, small{
 h1{  
     color: var(--grn);
     background-color: var(--wht);
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 3em; 
    }
 
@@ -138,34 +146,34 @@ figcaption{
 figcaption[title="btm-blk"]{
     color: var(--blk);
     position: relative;
-    top: -43px;
+    top: -33px;
     text-transform: uppercase;
 }
 
 figcaption[title="btm-wht"]{
     color: var(--wht);
     position: relative;
-    top: -43px;
+    top: -33px;
     text-transform: uppercase;
 }
 
 figcaption[title="top-wht"]{
     color: var(--wht);
     position: relative;
-    top: -279px;
+    top: -269px;
     text-transform: uppercase;
 }
 figcaption[title="top-blk"]{
     color: var(--blk);
     position: relative;
-    top: -277px;
+    top: -267px;
     text-transform: uppercase;
 }
 
 figcaption[title="long-pic"]{
     color: var(--blk);
     position: relative;
-    top: -625px;
+    top: -615px;
     text-transform: uppercase;
 }
 
@@ -184,10 +192,13 @@ figcaption[title="long-pic"]{
 form{
     display: flex;
     flex-direction: column;
+    margin: 20px auto;
+    width: 83%
 }
 
 label{
     color: var(--wht);
+    font-weight: bold;
     margin-top: 10px;
 
 }
@@ -198,6 +209,7 @@ input{
 
 ::placeholder{
     color: var(--grn);
+    font-weight: bold;
 }
 
 input[type="submit"]{
@@ -206,6 +218,13 @@ input[type="submit"]{
     justify-items: center;
     height: 40px;
     margin: 15px auto;
+    background-color: var(--grn);
+    color: var(--wht);
+    font-weight: bold;
+}
+
+#hide{
+    display: none;
 }
 /*--------------------Footer--------------------*/
 footer{
@@ -215,6 +234,7 @@ footer{
 
 small{
     color: var(--wht);
+    padding: 10px 0;
 }
 
 /*--------------------Media Queries--------------------*/
@@ -225,7 +245,7 @@ small{
 
     nav ul{
         padding: 25px 308px;
-        width: 30%;
+        width: 33%;
         text-align: center;
     }
 
